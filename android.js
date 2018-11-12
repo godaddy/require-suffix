@@ -1,0 +1,1 @@
+require('./shim')('android', 'native');

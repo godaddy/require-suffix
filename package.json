@@ -1,0 +1,40 @@
+{
+  "name": "require-suffix",
+  "version": "1.0.0",
+  "description": "Shims require so that it works with react-native style requires (preferring ios/android/win/native files)",
+  "main": "native.js",
+  "scripts": {
+    "lint": "eslint-godaddy *.js test/*.js",
+    "pretest": "npm run lint",
+    "test": "nyc --reporter=text --reporter=json-summary npm run test:mocha",
+    "test:mocha": "mocha test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/require-suffix.git"
+  },
+  "maintainers": [
+    "Michael Luther <mluther1@godaddy.com>"
+  ],
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "win",
+    "native",
+    "require",
+    "import"
+  ],
+  "author": "GoDaddy.com Operating Company, LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "assume": "^2.1.0",
+    "clear-require": "^2.0.0",
+    "eslint": "^5.7.0",
+    "eslint-config-godaddy-es5": "^2.1.0",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-mocha": "^5.2.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  }
+}
