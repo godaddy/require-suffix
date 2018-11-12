@@ -1,4 +1,7 @@
 # require-suffix
+[![Build Status](https://travis-ci.org/godaddy/require-suffix.svg?branch=master)](https://travis-ci.org/godaddy/require-suffix) [![Coverage Status](https://coveralls.io/repos/github/godaddy/require-suffix/badge.svg?branch=master)](https://coveralls.io/github/godaddy/require-suffix?branch=master)
+[![NPM](https://nodei.co/npm/require-suffix.png)](https://nodei.co/npm/require-suffix/)
+
 Shims node's require method so that it works with runtimes that have additional
 file suffixes they prefer to load. The original impetus was react-native's
 requires that preferring ios/android/win/native files over the standard js file.
